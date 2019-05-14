@@ -1,0 +1,420 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-y: scroll;
+overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    background: rgb(247, 245, 242);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(180, 179, 174);
+}
+
+header::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.main-nav-title {
+    float: left;
+    padding-top: 12px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.main-front-page-section {
+    width: 98%;
+    background-color: aqua;
+    height: 20px;
+}
+
+.main-banner {
+    width: 98%;
+    background-color: #f3f3f3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23f72d01' fill-opacity='0.17' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    height: 30rem;
+}
+
+.main-banner-title h2 {
+    padding-top: 380px;
+    color: white;
+}
+
+.main-banner-title {
+    width: 98%;
+    height: 600px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/doctor and stark (2).jpg');
+}
+
+.beer-section-title {
+    text-align: center;
+}
+
+.beer-pic {
+    width: 20rem;
+    margin: 0 10rem;
+}
+
+.intro {
+    margin: 5rem;
+    padding-top: 4rem;
+}
+
+.columns {
+    columns: 250px 2;
+}
+
+.tea-section {
+    width: 85%;
+    background-color: rgb(90, 122, 122);
+    margin: 2rem auto;
+    margin-bottom: 40%;
+}
+
+.tea-section-title {
+    text-align: center;
+}
+
+.tea-image-one {
+    width: 50%;
+    padding: 1rem;
+    float: left;
+}
+
+.teas-section-text {
+    width: 48%;
+    padding: 1rem;
+    padding-top: 2rem;
+    float: right;
+}
+
+.main-burger-section {
+    margin: auto;
+    width: 85%;
+    height: 700px;
+    background-color: rgba(195, 218, 218, 0);
+}
+
+.burgers-section-title {
+    text-align: center;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+.burger-image-one {
+    width: 47%;
+    padding: 1rem;
+    float: left;
+}
+
+.burgers-section-text {
+    width: 45%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: rgb(247, 245, 242);
+}
+
+.burger-menu {
+    float: left;
+    width: 45%;
+    padding: 4rem;
+    padding-left: 8rem;
+    padding-top: 1px;
+    text-transform: uppercase;
+}
+
+.meet-the-owners-section {
+    margin: 0 auto;
+    width: 85%;
+    background-color: antiquewhite;
+    margin-bottom: 900px;
+
+}
+
+.meet-the-owners-title {
+    text-align: center;
+}
+
+
+
+.stark-pic-one {
+    float: left;
+    width: 98%;
+}
+
+.starks-owner-card {
+    float: left;
+    width: 45%;
+}
+
+.stephen-pic-one {
+    width: 84%;
+    float: right;
+    align-self: center
+}
+
+.owner-stephens-namtag {
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.owner-tonys-nametag {
+    text-align: center;
+}
+
+.docs-info {
+    float: right;
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.docs-owner-card {
+    float: right;
+    width: 45%;
+}
+
+.starks-info {
+    float: right;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* ################### community section ############## */
+
+
+.community-section {
+    width: 98%;
+    margin: auto;
+    background-color: rgb(243, 245, 245);
+}
+
+.community-section-title {
+    text-align: center;
+    font-weight: 800;
+    background-color: aquamarine
+}
+
+.community-card-one {
+   text-align: center;
+   width: 98%;
+   background-color: #f3f3f3;
+   margin: 0 auto;
+}
+
+/* ############### footer ############## */
+
+.footer {
+    width: 100%;
+    height: 8rem;
+    margin-top: 4rem;
+    background-color: azure;
+
+}
+
+.footer-info {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+/*  ################### media quarys ################ */
+
+@media (max-width: 1244px) {
+    .main-nav-title {
+      margin-left: 4rem;
+    }
+    nav li {
+        margin-left: 0%;
+        margin-right: 3rem;
+       }
+    
+}
+
+@media (max-width: 814px) {
+    .intro {
+        text-align: center;
+        margin: 0;
+        display: inline-block;
+   }
+   
+   .beer-section-title {
+       text-align: center;
+   }
+   
+   .beer-pic {
+       width: 20rem;
+       margin: 0 auto;
+       margin-left: 15rem;
+       display: inline-block;
+       align-content: center;
+      
+   }
+   
+   .columns {
+       columns: 1;
+   }
+
+   .main-burger-section {
+    margin: auto;
+    width: 85%;
+    height: 1100px;
+    background-color: rgba(195, 218, 218, 0);
+}
+   
+   .burgers-section-text {
+       width: 80%;
+   }
+   .burger-image-one {
+    width: 90%;
+    align-self: center;
+    padding: 1rem;
+}
+.burger-menu {
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+    padding-top: 1px;
+    text-transform: uppercase;
+}
+.stark-pic-one {
+    float: left;
+    width: 110%;
+}
+
+.stephen-pic-one {
+    width: 84%;
+    float: right;
+    align-self: center
+}
+
+}
+
+@media (max-width: 671px) {
+    nav li {
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0 auto;
+    }
+   h1 .main-nav-title {
+        white-space: nowrap;
+      }
+      nav ul {
+        width: 85%;
+        
+      }
+      .beer-pic {
+        width: 20rem;
+        margin: 0 auto;
+        margin-left: 7rem;
+        display: inline-block;
+    }
+    .tea-section {
+        width: 85%;
+        background-color: rgb(90, 122, 122);
+        margin: 2rem auto;
+        margin-bottom: 110%;
+    }
+    
+    .teas-section-text{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .tea-image-one {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .burgers-section-title {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .starks-owner-card {
+        display: block;
+        width: 80%;
+    }
+
+    .docs-owner-card {
+        display: block;
+        width: 120%;
+        margin: auto;
+    }
+
+  }
+  
